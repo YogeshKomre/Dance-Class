@@ -1,0 +1,223 @@
+<html>
+    <head>
+        <meta name="viewport"
+        content="width=device-width,intial-scale=1">
+        <style>
+            body{
+                font-family: Calibri, Arial, Helvetica, sans-serif;
+                background: #a04a4a;
+
+            }
+            .container{
+                padding: 50px;
+                background-color: sandybrown;
+            }/*
+            input
+                [type=text],input[type=password],textarea{
+                    width: 100%;
+                    padding: 15px;
+                    margin: 5px 0 22px 0;
+                    display: inline-block;
+                    border: none;
+                    background: #f1f1f1;
+                }
+                input[type=text]:focus,input[type=password]:focus{
+                    background-color: chocolate;
+                    outline: none;
+                }
+                div{
+                    padding: 10px 0;
+
+                }
+                hr{
+                    border: 1px solid #a04a4a;
+                    margin-bottom: 25px;
+                }
+                .registration{
+                    background-color: aquamarine;
+                    color: aliceblue;
+                    padding: 16px 20px;
+                    margin: 8px 0;
+                    border: none;
+                    cursor: pointer;
+                    width: 100%;
+                    opacity: 0.9;
+                }
+                .registration:hover{
+                    opacity: 1;
+                    background-color: #b5f10f;
+                }*/
+                .submit{
+                    font-size: 2rem;
+                    margin: 0px auto;
+                    display: block;
+                    color: #b5f10f;
+                    padding: 0.5rem 0.8rem;
+                    border: 1px solid white;
+                    background-color: aquamarine;
+                    color: #f1f1f1;
+                    border-radius: 10px;
+                    box-shadow: rgb(100 100 100 111/20%) 0px 7px 29px 0px;
+                    align-items: center;
+                }/*
+                .ab{
+                    position: relative;
+                    font-size: 18px;
+                    color: #252839;
+                    -webkit-text-stroke: o.3vw #383d52;
+                    text-transform: uppercase;
+                    box-shadow: #f0ec06;
+                    text-align: start;
+
+                }*/
+                .form-body {
+                    padding:10px 40px;
+                    color:#666;
+                }
+
+                .form-group{
+                    margin-bottom:20px;
+                }
+                .form-body .label-title {
+                    color:#a04a4a;
+                    font-size: 17px;
+                    font-weight: bold;
+                }
+
+               .form-body .form-input {
+                    font-size: 17px;
+                    box-sizing: border-box;
+                    width: 100%;
+                    height: 34px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    color: #333333;
+                    text-align: left;
+                    border: 1px solid #d6d6d6;
+                    border-radius: 4px;
+                    background: white;
+                    outline: none;
+                }
+                
+               .form-body .form-select {
+                    font-size: 17px;
+                    box-sizing: border-box;
+                    width: 50%;
+                    height: 22px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    color: #333333;
+                    text-align: left;
+                    border: 1px solid #d6d6d6;
+                    border-radius: 4px;
+                    background: white;
+                    outline: none;
+                }
+                .horizontal-group .left{
+                    float:left;
+                    width:49%;
+                }
+
+               .horizontal-group .right{
+                    float:right;
+                    width:49%;
+                }
+
+                input[type="file"] {
+                    outline: none;
+                    cursor:pointer;
+                    font-size: 17px;
+                }
+
+                #range-label {
+                    width:15%;
+                    padding:5px;
+                    background-color: #a04a4a;
+                    color:white;
+                    border-radius: 5px;
+                    font-size: 17px;
+                    position: relative;
+                    top:-8px;
+                }
+
+
+                ::-webkit-input-placeholder {
+                    color:#d9d9d9;
+                }
+
+                img{
+                    align-items: center;
+                    margin-top: 0;
+                    top: 100%;
+                    left: 100%;
+                }
+        </style>
+    </head>
+    <body>
+       <h1>Dance Like Michel Jackson</h1>
+        <h2>Register Your Name</h2>
+        <div class="container">
+            <img src="unnamed.webp">
+            <div class="form-body">
+                <div class="horizontal-group">
+                    <DIV class="form-group left">
+        <div>
+            <label class="label-title" for="first-name">First Name :</label>
+            <input class="form-input" type="text" id="first-name" name="first-name" required>
+        </div><br>
+        <div>
+            <label class="label-title" for="first-name">Last Name :</label>
+            <input class="form-input" type="text" id="last-name" name="last-name" required>
+        </div><br></div>
+        <div class="form-group right">
+        <div>
+            <label class="label-title" for="email">Email :</label>
+            <input class="form-input" type="email" id="email" name="email" required>
+        </div><br>
+        <div>
+            <label class="label-title" for="number">Phone Number :</label>
+            <input class="form-input" type="number" id="Phone-number" name="number" required>
+        </div><br></div>
+        <div class="form-group left">
+        <div>
+            <label class="label-title" for="dob">Date Of Birth :</label>
+            <input class="form-input" type="dob" id="dob" name="dob" required>
+        </div><br></div>
+        <div class="form-group right">
+            <div><label class="label-title" for="password">Password:</label>
+                <input type="password" id="password" class="form-input" >
+            </div><br></div>
+            <div class="form-group left">
+            <div><label class="label-title" for="confirm-password">Confirm Password</label>
+                <input type="confirm-password" id="password" class="form-input">
+            </div><br></div>
+        <div>
+            <label class="label-title" for="gender">Gender :</label>
+            <select class="form-select" name="gender" id="gender">
+                <option value="">Select:</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div><br></div>
+        <div class="form-group left">
+        <div>
+            <label class="label-title" for="course">Course :</label>
+            <select class="form-select" name="course" id="course">
+                <option value="">Courses</option>
+                <option value="classical">Semi-Classical</option>
+                <option value="Bollywood">Bollywood </option>
+                <option value="contemprorary">Contemprorary</option>
+                <option value="hip-hop">Hip-Hop</option>
+                <option value="Bachata">Bachata</option>
+                <option value="lyrical">Lyrical</option>
+                <option value="Looking">Looking</option>
+                <option value="Poppingh">Popping</option>
+                <option value="krump">Krumping</option>
+            </select>
+        </div><br></div>
+    </div>
+    </div>
+        <button class="submit" name="submit" id="sumbit"><ul><li><a class="submit" href="web.html">Submit</a></li></ul></button>
+    </body>
+</html>
